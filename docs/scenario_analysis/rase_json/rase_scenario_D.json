@@ -1,0 +1,67 @@
+{
+  "scenario": "D",
+  "description": "가상 시나리오 - 기준 높이 20m (개정안 17m보다 추가 상향)",
+  "article_id": "시행령 제86조 (가상 변형)",
+  "article_title": "일조 등의 확보를 위한 건축물의 높이 제한",
+  "R": {
+    "description": "전용주거지역·일반주거지역에서 건축물을 건축하는 경우, 정북방향으로의 인접 대지경계선으로부터 일정 거리 이상을 띄어 건축하여야 한다."
+  },
+  "A": {
+    "applicable_zones": ["전용주거지역", "일반주거지역"],
+    "applicable_building_types": ["모든 건축물"],
+    "special_targets": ["공동주택(기숙사 제외)은 채광창 기준 적용"]
+  },
+  "S": {
+    "parameters": {
+      "low_threshold": 10.0,
+      "low_setback": 1.5,
+      "mid_threshold": 20.0,
+      "mid_setback": 5.0,
+      "slope_ratio": 0.5
+    },
+    "conditions": [
+      {
+        "height_range": "높이 10m 이하",
+        "setback_rule": "인접 대지경계선으로부터 1.5m 이상 이격",
+        "setback_distance_m": 1.5,
+        "rule_type": "fixed"
+      },
+      {
+        "height_range": "높이 10m 초과 20m 이하",
+        "setback_rule": "인접 대지경계선으로부터 5.0m 이상 이격",
+        "setback_distance_m": 5.0,
+        "rule_type": "fixed"
+      },
+      {
+        "height_range": "높이 20m 초과",
+        "setback_rule": "인접 대지경계선으로부터 해당 높이의 1/2 이상 이격",
+        "setback_formula": "h * 0.5",
+        "rule_type": "proportional"
+      }
+    ]
+  },
+  "E": {
+    "exceptions": [
+      {
+        "condition": "정북방향으로 20m 이상의 도로에 접한 대지",
+        "effect": "사선제한 미적용"
+      },
+      {
+        "condition": "정북방향 인접 대지가 비주거지역인 경우",
+        "effect": "사선제한 미적용"
+      }
+    ]
+  },
+  "supplementary_rules": {
+    "lot_setback": {
+      "source": "서울특별시 건축 조례 제30조 별표4",
+      "rule": "다세대주택: 건축선 및 인접 대지경계선으로부터 1m 이상 이격",
+      "applied_as": "필지 경계선 전체에 1m 내측 오프셋 적용"
+    }
+  },
+  "change_log": {
+    "changed_from": "scenario_B",
+    "changed_fields": ["S.parameters.mid_threshold"],
+    "change_summary": "중간 구간 기준 높이를 17m에서 20m로 상향 (추가 완화의 한계 효과 관찰)"
+  }
+}

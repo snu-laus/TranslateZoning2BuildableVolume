@@ -1,0 +1,90 @@
+<svg viewBox="0 0 730 270" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans CJK KR', sans-serif">
+  <rect width="730" height="270" fill="white"/>
+
+  <!-- ============ LEFT: 현행 ============ -->
+
+  <text x="135" y="20" text-anchor="middle" fill="#2B5C8A" font-size="12" font-weight="700">현행</text>
+
+  <rect x="30" y="238" width="170" height="12" fill="#E8E4DF"/>
+  <rect x="200" y="238" width="40" height="12" fill="#F0ECE7"/>
+
+  <rect x="50" y="213" width="148" height="25" fill="#2B5C8A" fill-opacity="0.18" stroke="#2B5C8A" stroke-width="0.8"/>
+  <rect x="50" y="188" width="148" height="25" fill="#2B5C8A" fill-opacity="0.18" stroke="#2B5C8A" stroke-width="0.8"/>
+  <rect x="50" y="163" width="148" height="25" fill="#2B5C8A" fill-opacity="0.18" stroke="#2B5C8A" stroke-width="0.8"/>
+  <rect x="50" y="138" width="127" height="25" fill="#2B5C8A" fill-opacity="0.18" stroke="#2B5C8A" stroke-width="0.8"/>
+  <rect x="50" y="113" width="106" height="25" fill="#2B5C8A" fill-opacity="0.18" stroke="#2B5C8A" stroke-width="0.8"/>
+  <rect x="50" y="88" width="85" height="25" fill="#2B5C8A" fill-opacity="0.18" stroke="#2B5C8A" stroke-width="0.8"/>
+  <rect x="50" y="63" width="64" height="25" fill="#2B5C8A" fill-opacity="0.18" stroke="#2B5C8A" stroke-width="0.8"/>
+
+  <line x1="218" y1="35" x2="218" y2="238" stroke="#333" stroke-width="1.2" stroke-dasharray="5,4"/>
+
+  <line x1="198" y1="238" x2="198" y2="163" stroke="#2B5C8A" stroke-width="1.8"/>
+  <line x1="198" y1="163" x2="93" y2="38" stroke="#2B5C8A" stroke-width="1.8"/>
+
+  <line x1="225" y1="163" x2="245" y2="163" stroke="#2B5C8A" stroke-width="0.6"/>
+  <text x="248" y="167" fill="#2B5C8A" font-size="10" font-weight="600">10m</text>
+
+  <line x1="198" y1="247" x2="218" y2="247" stroke="#2B5C8A" stroke-width="0.7"/>
+  <circle cx="198" cy="247" r="1.5" fill="#2B5C8A"/>
+  <circle cx="218" cy="247" r="1.5" fill="#2B5C8A"/>
+  <text x="208" y="259" text-anchor="middle" fill="#2B5C8A" font-size="8">1.5m</text>
+
+  <line x1="135" y1="100" x2="218" y2="100" stroke="#2B5C8A" stroke-width="0.7"/>
+  <circle cx="135" cy="100" r="1.5" fill="#2B5C8A"/>
+  <circle cx="218" cy="100" r="1.5" fill="#2B5C8A"/>
+  <text x="176" y="96" text-anchor="middle" fill="#2B5C8A" font-size="8" font-weight="600">h÷2</text>
+
+  <!-- ============ RIGHT: 시나리오 C (기준 높이 14m) ============ -->
+
+  <text x="485" y="20" text-anchor="middle" fill="#D4763C" font-size="12" font-weight="700">시나리오 C</text>
+
+  <rect x="380" y="238" width="170" height="12" fill="#E8E4DF"/>
+  <rect x="550" y="238" width="40" height="12" fill="#F0ECE7"/>
+
+  <rect x="400" y="213" width="148" height="25" fill="#2B5C8A" fill-opacity="0.18" stroke="#2B5C8A" stroke-width="0.8"/>
+  <rect x="400" y="188" width="148" height="25" fill="#2B5C8A" fill-opacity="0.18" stroke="#2B5C8A" stroke-width="0.8"/>
+  <rect x="400" y="163" width="148" height="25" fill="#2B5C8A" fill-opacity="0.18" stroke="#2B5C8A" stroke-width="0.8"/>
+  <rect x="400" y="138" width="138" height="25" fill="#2B5C8A" fill-opacity="0.18" stroke="#2B5C8A" stroke-width="0.8"/>
+  <rect x="400" y="113" width="106" height="25" fill="#2B5C8A" fill-opacity="0.18" stroke="#2B5C8A" stroke-width="0.8"/>
+  <rect x="400" y="88" width="85" height="25" fill="#2B5C8A" fill-opacity="0.18" stroke="#2B5C8A" stroke-width="0.8"/>
+  <rect x="400" y="63" width="64" height="25" fill="#2B5C8A" fill-opacity="0.18" stroke="#2B5C8A" stroke-width="0.8"/>
+
+  <!-- Gain: 4F (127->138, +11) -->
+  <rect x="527" y="138" width="11" height="25" fill="#D4763C" fill-opacity="0.30" stroke="#D4763C" stroke-width="1"/>
+
+  <line x1="568" y1="35" x2="568" y2="238" stroke="#333" stroke-width="1.2" stroke-dasharray="5,4"/>
+
+  <!-- Setback envelope -->
+  <line x1="548" y1="238" x2="548" y2="163" stroke="#D4763C" stroke-width="1.8"/>
+  <line x1="548" y1="163" x2="538" y2="163" stroke="#D4763C" stroke-width="1.8"/>
+  <line x1="538" y1="163" x2="538" y2="138" stroke="#D4763C" stroke-width="1.8"/>
+  <line x1="538" y1="138" x2="527" y2="138" stroke="#D4763C" stroke-width="1.8"/>
+  <line x1="527" y1="138" x2="443" y2="38" stroke="#D4763C" stroke-width="1.8"/>
+
+  <!-- Ghost: A envelope -->
+  <line x1="548" y1="163" x2="443" y2="38" stroke="#2B5C8A" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.25"/>
+
+  <line x1="575" y1="163" x2="595" y2="163" stroke="#D4763C" stroke-width="0.6"/>
+  <text x="598" y="167" fill="#D4763C" font-size="10" font-weight="600">10m</text>
+
+  <line x1="575" y1="138" x2="595" y2="138" stroke="#D4763C" stroke-width="0.6"/>
+  <text x="598" y="142" fill="#D4763C" font-size="10" font-weight="600">14m</text>
+
+  <line x1="548" y1="247" x2="568" y2="247" stroke="#D4763C" stroke-width="0.7"/>
+  <circle cx="548" cy="247" r="1.5" fill="#D4763C"/>
+  <circle cx="568" cy="247" r="1.5" fill="#D4763C"/>
+  <text x="558" y="259" text-anchor="middle" fill="#D4763C" font-size="8">1.5m</text>
+
+  <line x1="538" y1="152" x2="568" y2="152" stroke="#D4763C" stroke-width="0.7"/>
+  <circle cx="538" cy="152" r="1.5" fill="#D4763C"/>
+  <circle cx="568" cy="152" r="1.5" fill="#D4763C"/>
+  <text x="553" y="148" text-anchor="middle" fill="#D4763C" font-size="8" font-weight="600">5m</text>
+
+  <line x1="485" y1="100" x2="568" y2="100" stroke="#D4763C" stroke-width="0.7"/>
+  <circle cx="485" cy="100" r="1.5" fill="#D4763C"/>
+  <circle cx="568" cy="100" r="1.5" fill="#D4763C"/>
+  <text x="526" y="96" text-anchor="middle" fill="#D4763C" font-size="8" font-weight="600">h÷2</text>
+
+  <text x="640" y="145" fill="#D4763C" font-size="9" font-weight="600">← 면적 증가</text>
+  <text x="648" y="159" fill="#D4763C" font-size="9">(4층)</text>
+</svg>

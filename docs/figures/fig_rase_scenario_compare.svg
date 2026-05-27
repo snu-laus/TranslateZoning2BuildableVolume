@@ -1,0 +1,129 @@
+<svg viewBox="0 0 760 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      text { font-family: 'KoPubDotum', 'KoPub돋움체', sans-serif; }
+      .h1 { font-size: 12.5px; font-weight: 700; fill: #111; }
+      .h2 { font-size: 10.5px; font-weight: 600; fill: #333; }
+      .body { font-size: 9px; fill: #555; }
+      .m { font-family: 'SF Mono','Menlo','Consolas',monospace; }
+      .k { font-size: 8.5px; fill: #111; font-weight: 600; }
+      .v { font-size: 8.5px; fill: #555; }
+      .n { font-size: 8.5px; fill: #222; font-weight: 700; }
+      .nl { font-size: 8.5px; fill: #bbb; font-style: italic; }
+      .br { font-size: 8.5px; fill: #aaa; }
+      .ln { font-size: 7px; fill: #bbb; text-anchor: end; }
+      .dim { font-size: 7.5px; fill: #aaa; }
+      .badge { font-size: 8px; font-weight: 700; }
+      .changed { fill: #333; font-weight: 700; }
+    </style>
+    <marker id="arr" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <path d="M0,0 L7,2.5 L0,5" fill="#999"/>
+    </marker>
+  </defs>
+
+  <rect width="760" height="520" fill="white"/>
+
+  <!-- ===== TITLE ===== -->
+  <text x="380" y="22" text-anchor="middle" class="h1">RASE JSON 파라미터 교체를 통한 시나리오 전환</text>
+
+  <!-- ===== LEFT: Scenario A ===== -->
+  <text x="185" y="48" text-anchor="middle" class="h2">시나리오 A (현행)</text>
+  <line x1="120" y1="54" x2="250" y2="54" stroke="#ddd" stroke-width="0.8"/>
+
+  <!-- Code block A -->
+  <rect x="20" y="64" width="330" height="312" rx="5" fill="#fafafa" stroke="#ccc" stroke-width="1"/>
+  <rect x="20" y="64" width="26" height="312" rx="5" fill="#f2f2f2"/>
+
+  <!-- S.parameters -->
+  <text x="40" y="84" class="ln m">14</text> <text x="56" y="84" class="m k">"S"</text><text x="66" y="84" class="m br"> : {</text>
+  <text x="40" y="100" class="ln m">15</text> <text x="70" y="100" class="m k">"parameters"</text><text x="138" y="100" class="m br"> : {</text>
+  <text x="40" y="118" class="ln m">16</text> <text x="84" y="118" class="m k">"low_threshold"</text><text x="172" y="118" class="m br"> : </text><text x="184" y="118" class="m n">10.0</text><text x="208" y="118" class="m br">,</text>
+  <text x="40" y="134" class="ln m">17</text> <text x="84" y="134" class="m k">"low_setback"</text><text x="162" y="134" class="m br"> : </text><text x="174" y="134" class="m n">1.5</text><text x="194" y="134" class="m br">,</text>
+
+  <!-- HIGHLIGHT: null values -->
+  <rect x="50" y="142" width="290" height="34" rx="2" fill="#f0f0f0" stroke="none"/>
+  <text x="40" y="156" class="ln m">18</text> <text x="84" y="156" class="m k">"mid_threshold"</text><text x="174" y="156" class="m br"> : </text><text x="186" y="156" class="m nl">null</text><text x="208" y="156" class="m br">,</text>
+  <text x="40" y="172" class="ln m">19</text> <text x="84" y="172" class="m k">"mid_setback"</text><text x="166" y="172" class="m br"> : </text><text x="178" y="172" class="m nl">null</text><text x="200" y="172" class="m br">,</text>
+
+  <text x="40" y="190" class="ln m">20</text> <text x="84" y="190" class="m k">"slope_ratio"</text><text x="164" y="190" class="m br"> : </text><text x="176" y="190" class="m n">0.5</text>
+  <text x="40" y="206" class="ln m">21</text> <text x="70" y="206" class="m br">},</text>
+
+  <!-- conditions -->
+  <text x="40" y="224" class="ln m">22</text> <text x="70" y="224" class="m k">"conditions"</text><text x="138" y="224" class="m br"> : [</text>
+
+  <rect x="50" y="232" width="290" height="56" rx="2" fill="#f0f0f0" stroke="none"/>
+  <text x="40" y="246" class="ln m">23</text> <text x="84" y="246" class="m br">{</text><text x="94" y="246" class="m v">"높이 10m 이하"</text><text x="190" y="246" class="m br">→</text><text x="202" y="246" class="m v">1.5m 이격</text><text x="266" y="246" class="m dim">fixed</text><text x="296" y="246" class="m br">},</text>
+  <text x="40" y="264" class="ln m">24</text>
+  <text x="84" y="282" class="m br">{</text><text x="94" y="282" class="m v">"높이 10m 초과"</text><text x="190" y="282" class="m br">→</text><text x="202" y="282" class="m v">h * 0.5 이격</text><text x="278" y="282" class="m dim">proportional</text><text x="340" y="282" class="m br">}</text>
+  <text x="40" y="282" class="ln m">25</text>
+
+  <text x="40" y="300" class="ln m">26</text> <text x="70" y="300" class="m br">]</text>
+  <text x="40" y="316" class="ln m">27</text> <text x="56" y="316" class="m br">}</text>
+
+  <!-- "2구간" label -->
+  <text x="185" y="344" text-anchor="middle" class="dim">중간 구간 없음 (10m 초과 시 바로 사선 적용)</text>
+
+  <!-- null annotation -->
+  <text x="310" y="160" class="m dim">← 중간 구간 미설정</text>
+
+  <!-- ===== CENTER ARROW ===== -->
+  <line x1="365" y1="200" x2="395" y2="200" stroke="#555" stroke-width="1.4" marker-end="url(#arr)"/>
+  <text x="380" y="190" text-anchor="middle" class="badge" fill="#555">파라미터</text>
+  <text x="380" y="216" text-anchor="middle" class="badge" fill="#555">교체</text>
+
+  <!-- ===== RIGHT: Scenario B ===== -->
+  <text x="575" y="48" text-anchor="middle" class="h2">시나리오 B (개정안)</text>
+  <line x1="510" y1="54" x2="640" y2="54" stroke="#ddd" stroke-width="0.8"/>
+
+  <!-- Code block B -->
+  <rect x="410" y="64" width="330" height="312" rx="5" fill="#fafafa" stroke="#ccc" stroke-width="1"/>
+  <rect x="410" y="64" width="26" height="312" rx="5" fill="#f2f2f2"/>
+
+  <!-- S.parameters -->
+  <text x="430" y="84" class="ln m">14</text> <text x="446" y="84" class="m k">"S"</text><text x="456" y="84" class="m br"> : {</text>
+  <text x="430" y="100" class="ln m">15</text> <text x="460" y="100" class="m k">"parameters"</text><text x="528" y="100" class="m br"> : {</text>
+  <text x="430" y="118" class="ln m">16</text> <text x="474" y="118" class="m k">"low_threshold"</text><text x="562" y="118" class="m br"> : </text><text x="574" y="118" class="m n">10.0</text><text x="598" y="118" class="m br">,</text>
+  <text x="430" y="134" class="ln m">17</text> <text x="474" y="134" class="m k">"low_setback"</text><text x="552" y="134" class="m br"> : </text><text x="564" y="134" class="m n">1.5</text><text x="584" y="134" class="m br">,</text>
+
+  <!-- HIGHLIGHT: changed values -->
+  <rect x="440" y="142" width="290" height="34" rx="2" fill="#e0e0e0" stroke="#999" stroke-width="0.8"/>
+  <text x="430" y="156" class="ln m">18</text> <text x="474" y="156" class="m k">"mid_threshold"</text><text x="564" y="156" class="m br"> : </text><text x="576" y="156" class="m changed">17.0</text><text x="600" y="156" class="m br">,</text>
+  <text x="430" y="172" class="ln m">19</text> <text x="474" y="172" class="m k">"mid_setback"</text><text x="556" y="172" class="m br"> : </text><text x="568" y="172" class="m changed">5.0</text><text x="588" y="172" class="m br">,</text>
+
+  <text x="430" y="190" class="ln m">20</text> <text x="474" y="190" class="m k">"slope_ratio"</text><text x="554" y="190" class="m br"> : </text><text x="566" y="190" class="m n">0.5</text>
+  <text x="430" y="206" class="ln m">21</text> <text x="460" y="206" class="m br">},</text>
+
+  <!-- conditions -->
+  <text x="430" y="224" class="ln m">22</text> <text x="460" y="224" class="m k">"conditions"</text><text x="528" y="224" class="m br"> : [</text>
+
+  <rect x="440" y="232" width="290" height="86" rx="2" fill="#e0e0e0" stroke="#999" stroke-width="0.8"/>
+  <text x="430" y="246" class="ln m">23</text> <text x="474" y="246" class="m br">{</text><text x="484" y="246" class="m v">"높이 10m 이하"</text><text x="580" y="246" class="m br">→</text><text x="592" y="246" class="m v">1.5m 이격</text><text x="656" y="246" class="m dim">fixed</text><text x="686" y="246" class="m br">},</text>
+
+  <text x="430" y="266" class="ln m">24</text> <text x="474" y="266" class="m br">{</text><text x="484" y="266" class="m changed">"높이 10m 초과 17m 이하"</text><text x="630" y="266" class="m br">→</text><text x="642" y="266" class="m changed">5.0m</text><text x="670" y="266" class="m dim">fixed</text><text x="700" y="266" class="m br">},</text>
+
+  <text x="430" y="286" class="ln m">25</text> <text x="474" y="286" class="m br">{</text><text x="484" y="286" class="m v">"높이 17m 초과"</text><text x="580" y="286" class="m br">→</text><text x="592" y="286" class="m v">h * 0.5</text><text x="640" y="286" class="m dim">proportional</text><text x="720" y="286" class="m br">}</text>
+
+  <text x="430" y="316" class="ln m">26</text> <text x="460" y="316" class="m br">]</text>
+  <text x="430" y="332" class="ln m">27</text> <text x="446" y="332" class="m br">}</text>
+
+  <!-- "3구간" label -->
+  <text x="575" y="344" text-anchor="middle" class="dim">중간 구간 신설 (10m~17m 고정 5.0m 이격)</text>
+
+  <!-- changed annotation -->
+  <text x="698" y="160" class="m badge" fill="#555">변경</text>
+
+  <!-- ===== BOTTOM: change_log ===== -->
+  <rect x="160" y="380" width="440" height="120" rx="5" fill="#fafafa" stroke="#ccc" stroke-width="1"/>
+  <text x="380" y="400" text-anchor="middle" class="h2">change_log</text>
+
+  <text x="180" y="420" class="m k">"changed_from"</text><text x="278" y="420" class="m br"> : </text><text x="290" y="420" class="m v">"scenario_A"</text>
+  <text x="180" y="438" class="m k">"changed_fields"</text><text x="282" y="438" class="m br"> : </text><text x="294" y="438" class="m v">["S.parameters.mid_threshold",</text>
+  <text x="294" y="454" class="m v"> "S.parameters.mid_setback", "S.conditions"]</text>
+  <text x="180" y="474" class="m k">"change_summary"</text><text x="286" y="474" class="m br"> : </text><text x="298" y="474" class="m v">"기준 높이 10m→17m 상향,</text>
+  <text x="298" y="490" class="m v"> 10m~17m 구간에 5.0m 고정 이격 신설"</text>
+
+  <!-- Arrow from B to change_log -->
+  <line x1="575" y1="376" x2="575" y2="378" stroke="#bbb" stroke-width="0.8"/>
+  <line x1="380" y1="370" x2="380" y2="378" stroke="#bbb" stroke-width="0.8" stroke-dasharray="3,3"/>
+
+</svg>

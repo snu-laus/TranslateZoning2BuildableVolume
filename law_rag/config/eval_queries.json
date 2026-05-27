@@ -1,0 +1,604 @@
+[
+  {
+    "id": "Q01",
+    "question": "일조 등의 확보를 위한 건축물 높이 제한 조문은?",
+    "required_items": [
+      "제86조",
+      "일조 등의 확보"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q02",
+    "question": "전용주거지역 정북방향 이격기준 관련 조문은?",
+    "required_items": [
+      "제86조",
+      "정북",
+      "인접 대지경계선"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q03",
+    "question": "공동주택 채광 확보 거리 기준은 어디에 있나?",
+    "required_items": [
+      "제86조",
+      "채광",
+      "공동주택"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q04",
+    "question": "서울시 조례에서 일조 확보 높이제한 조문은?",
+    "required_items": [
+      "제35조",
+      "일조 등의 확보"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q05",
+    "question": "서울시 조례 영 제86조제1항 관련 이격거리 기준은?",
+    "required_items": [
+      "제35조",
+      "영 제86조제1항"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q06",
+    "question": "다세대주택 채광창 직각방향 1미터 기준 조문은?",
+    "required_items": [
+      "제35조",
+      "1미터",
+      "채광을 위한 창문"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q07",
+    "question": "가로구역별 건축물 높이 제한 조문은?",
+    "required_items": [
+      "제33조",
+      "가로구역별 건축물 높이 제한"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q08",
+    "question": "시행령상 건축물의 높이 제한은 몇 조인가?",
+    "required_items": [
+      "제82조",
+      "건축물의 높이 제한"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q09",
+    "question": "대지안의 공지기준은 어느 별표인가? (필수 첨부자료: 별첨자료1)",
+    "required_items": [
+      "[별표 4] 대지안의 공지기준",
+      "대지안의 공지기준"
+    ],
+    "required_attachments": [
+      "별첨자료1"
+    ],
+    "gold_ready": false,
+    "gold_missing_items": [
+      "별첨자료1"
+    ]
+  },
+  {
+    "id": "Q10",
+    "question": "서울특별시 건축 조례 별표4 문서를 찾아줘 (필수 첨부자료: 별첨자료2)",
+    "required_items": [
+      "[별표 4] 대지안의 공지기준",
+      "서울특별시 건축 조례"
+    ],
+    "required_attachments": [
+      "별첨자료2"
+    ],
+    "gold_ready": false,
+    "gold_missing_items": [
+      "별첨자료2"
+    ]
+  },
+  {
+    "id": "Q11",
+    "question": "일조 확보 관련 건축협정구역 완화 규정은?",
+    "required_items": [
+      "법 제61조",
+      "100분의 20",
+      "제86조제3항제1호"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q12",
+    "question": "일조 확보 위반 시 이행강제금 관련 근거는?",
+    "required_items": [
+      "법 제61조",
+      "높이 제한",
+      "위반"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q13",
+    "question": "거실의 채광 관련 조문은?",
+    "required_items": [
+      "제51조",
+      "거실의 채광"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q14",
+    "question": "단독주택과 공동주택 거실 채광 근거 규정은?",
+    "required_items": [
+      "제51조",
+      "단독주택",
+      "공동주택"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q15",
+    "question": "교육연구시설 교실 채광 설치 기준 조문은?",
+    "required_items": [
+      "제51조",
+      "교실",
+      "채광"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q16",
+    "question": "숙박시설 객실 채광/환기 설치 근거는?",
+    "required_items": [
+      "제51조",
+      "숙박시설",
+      "환기"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q17",
+    "question": "정북 방향 인접대지경계선 거리 확보가 필요한 조문은?",
+    "required_items": [
+      "제86조",
+      "정북",
+      "인접 대지경계선"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q18",
+    "question": "근린상업지역 또는 준주거지역에서 채광창 거리 배수 규정은?",
+    "required_items": [
+      "제86조",
+      "근린상업지역",
+      "준주거지역"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q19",
+    "question": "측벽과 측벽이 마주보는 경우 거리 기준은 어느 조문인가?",
+    "required_items": [
+      "제86조",
+      "측벽",
+      "4미터"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q20",
+    "question": "채광창이 없는 벽면이 마주보는 경우 최소거리 규정은?",
+    "required_items": [
+      "제86조",
+      "채광창",
+      "8미터"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q21",
+    "question": "동지 기준 2시간 이상 일조 확보 기준이 나오는 조문은?",
+    "required_items": [
+      "제86조",
+      "동지",
+      "2시간"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q22",
+    "question": "서울시 조례에서 정북방향 인접대지경계선 이격을 다루는 조문은?",
+    "required_items": [
+      "제35조",
+      "정북방향",
+      "인접대지경계선"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q23",
+    "question": "서울시 조례 다세대주택 채광창 벽면 1미터 규정은?",
+    "required_items": [
+      "제35조",
+      "다세대주택",
+      "1미터"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q24",
+    "question": "서울시 조례에서 일조 확보를 위한 높이제한 제목을 알려줘",
+    "required_items": [
+      "제35조(일조 등의 확보를 위한 건축물의 높이제한)"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q25",
+    "question": "법 제60조 관련 건축물 높이 제한 조문은 시행령 몇 조?",
+    "required_items": [
+      "제82조",
+      "법 제60조"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q26",
+    "question": "법 제61조 관련 시행령 조문은?",
+    "required_items": [
+      "제86조",
+      "법 제61조"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q27",
+    "question": "법 제61조 위반 관련 문구를 포함한 조문 근거를 찾아줘",
+    "required_items": [
+      "법 제61조",
+      "일조 등의 확보",
+      "위반"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q28",
+    "question": "서울시 조례에서 가로구역별 높이 규정은 어디인가?",
+    "required_items": [
+      "제33조",
+      "가로구역별"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q29",
+    "question": "건축물 높이 제한과 공지 기준을 함께 확인하려면 어떤 조문/별표를 봐야 하나? (필수 첨부자료: 별첨자료3)",
+    "required_items": [
+      "제82조",
+      "[별표 4] 대지안의 공지기준"
+    ],
+    "required_attachments": [
+      "별첨자료3"
+    ],
+    "gold_ready": false,
+    "gold_missing_items": [
+      "별첨자료3"
+    ]
+  },
+  {
+    "id": "Q30",
+    "question": "채광을 위한 창문 문구가 포함된 핵심 조문은?",
+    "required_items": [
+      "채광을 위한 창문",
+      "제86조"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q31",
+    "question": "일조권 이슈에서 먼저 확인할 시행령 조문은?",
+    "required_items": [
+      "제86조",
+      "일조"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q32",
+    "question": "서울시 기준으로 일조 관련 조문은 몇 조인가?",
+    "required_items": [
+      "제35조",
+      "일조"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q33",
+    "question": "정북 이격거리와 관련된 서울시 조례 근거는?",
+    "required_items": [
+      "제35조",
+      "정북방향"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q34",
+    "question": "건축법 시행령에서 채광 관련 대표 조문 2개는?",
+    "required_items": [
+      "제51조",
+      "제86조",
+      "채광"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q35",
+    "question": "공동주택 동간거리 규정 근거는?",
+    "required_items": [
+      "제86조",
+      "두 동",
+      "거리"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q36",
+    "question": "도시형 생활주택 배수 완화 문구가 나오는 조문은?",
+    "required_items": [
+      "도시형 생활주택",
+      "0.25배",
+      "제86조"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q37",
+    "question": "건축협정구역에서 일조 높이제한 완화 비율은?",
+    "required_items": [
+      "건축협정구역",
+      "100분의 20",
+      "제86조"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q38",
+    "question": "대지 상호간 공동주택의 일조 기준 완화 근거는?",
+    "required_items": [
+      "건축협정구역",
+      "공동주택",
+      "제86조제3항제1호"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q39",
+    "question": "서울특별시 조례에서 영 제86조 관련 내용을 찾고 싶다",
+    "required_items": [
+      "영 제86조",
+      "제35조"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q40",
+    "question": "채광창 없는 벽면 거리기준 수치가 포함된 조문은?",
+    "required_items": [
+      "8미터",
+      "채광창",
+      "제86조"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q41",
+    "question": "측벽 마주봄 최소거리 수치가 나오는 조문은? (필수 첨부자료: 별첨자료4)",
+    "required_items": [
+      "4미터",
+      "측벽",
+      "제86조"
+    ],
+    "required_attachments": [
+      "별첨자료4"
+    ],
+    "gold_ready": false,
+    "gold_missing_items": [
+      "별첨자료4"
+    ]
+  },
+  {
+    "id": "Q42",
+    "question": "공원·도로·하천 등 예외가 언급되는 일조 조문은?",
+    "required_items": [
+      "공원",
+      "도로",
+      "제86조"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q43",
+    "question": "건축물의 높이 제한 지정 공고 시 고려사항 조문은?",
+    "required_items": [
+      "제82조",
+      "지정ㆍ공고"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q44",
+    "question": "학교 교실의 채광/환기 설치 기준 근거를 제시해줘",
+    "required_items": [
+      "제51조",
+      "학교의 교실",
+      "채광 및 환기"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q45",
+    "question": "의료시설 병실 채광 설치 기준 조문은?",
+    "required_items": [
+      "제51조",
+      "의료시설의 병실"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q46",
+    "question": "정북 방향 인접대지경계선으로부터 띄어야 하는 거리를 다루는 조문은?",
+    "required_items": [
+      "정북",
+      "인접 대지경계선",
+      "제86조"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q47",
+    "question": "서울시 조례에서 일조 확보 높이제한의 적용 대상 지역은?",
+    "required_items": [
+      "전용주거지역",
+      "일반주거지역",
+      "제35조"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q48",
+    "question": "서울시 조례에서 채광창 벽면 직각방향 거리 배수 규정은?",
+    "required_items": [
+      "채광",
+      "직각방향",
+      "0.5배",
+      "제35조"
+    ],
+    "required_attachments": [],
+    "gold_ready": true,
+    "gold_missing_items": []
+  },
+  {
+    "id": "Q49",
+    "question": "높이 제한 관련 법 제60조와 연결되는 시행령 조문을 찾아줘 (필수 첨부자료: 별첨자료5)",
+    "required_items": [
+      "법 제60조",
+      "제82조"
+    ],
+    "required_attachments": [
+      "별첨자료5"
+    ],
+    "gold_ready": false,
+    "gold_missing_items": [
+      "별첨자료5"
+    ]
+  },
+  {
+    "id": "Q50",
+    "question": "일조 관련 법 제61조와 연결되는 시행령 조문을 찾아줘 (필수 첨부자료: 별첨자료6)",
+    "required_items": [
+      "법 제61조",
+      "제86조"
+    ],
+    "required_attachments": [
+      "별첨자료6"
+    ],
+    "gold_ready": false,
+    "gold_missing_items": [
+      "별첨자료6"
+    ]
+  }
+]

@@ -1,0 +1,114 @@
+{
+  "table_of_contents": [
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          206.62109375,
+          96.205078125
+        ],
+        [
+          388.21484375,
+          94.560546875
+        ],
+        [
+          387.05078125,
+          107.716796875
+        ],
+        [
+          205.45703125,
+          109.361328125
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          73.91796875,
+          121.2841796875
+        ],
+        [
+          348.63671875,
+          121.2841796875
+        ],
+        [
+          347.47265625,
+          133.6181640625
+        ],
+        [
+          72.75390625,
+          133.6181640625
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          73.044921875,
+          467.046875
+        ],
+        [
+          399.564453125,
+          465.40234375
+        ],
+        [
+          398.400390625,
+          476.9140625
+        ],
+        [
+          71.880859375,
+          478.55859375
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "TableCell",
+          42
+        ],
+        [
+          "Span",
+          5
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "Line",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\[\ubcc4\ud45c 4] \ub300\uc9c0\uc548\uc758 \uacf5\uc9c0\uae30\uc900 (\uc81c30\uc870\uad00\ub828)(\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uac74\ucd95 \uc870\ub840)"
+}

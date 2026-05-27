@@ -1,0 +1,142 @@
+<svg viewBox="0 0 700 660" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      text { font-family: 'KoPubDotum', 'KoPub돋움체', sans-serif; }
+      .title { font-size: 12.5px; font-weight: 700; fill: #111; }
+      .sec-title { font-size: 10.5px; font-weight: 700; fill: #222; }
+      .sec-desc { font-size: 8.5px; fill: #888; }
+      .m { font-family: 'SF Mono','Menlo','Consolas',monospace; }
+      .k  { font-size: 9px; fill: #111; font-weight: 600; }
+      .v  { font-size: 9px; fill: #555; }
+      .n  { font-size: 9px; fill: #222; font-weight: 700; }
+      .nl { font-size: 9px; fill: #bbb; font-style: italic; }
+      .br { font-size: 9px; fill: #aaa; }
+      .ln { font-size: 7.5px; fill: #bbb; text-anchor: end; }
+      .annot { font-size: 9px; font-weight: 600; fill: #444; }
+      .annot-sub { font-size: 7.5px; fill: #888; }
+      .badge { font-size: 8.5px; font-weight: 700; fill: white; }
+    </style>
+  </defs>
+
+  <rect width="700" height="660" fill="white"/>
+
+  <!-- Title -->
+  <text x="350" y="24" text-anchor="middle" class="title">RASE JSON  -  시행령 제86조 (현행 시나리오 A)</text>
+
+  <!-- ===== CODE BLOCK ===== -->
+  <rect x="24" y="40" width="460" height="596" rx="5" fill="#fafafa" stroke="#d0d0d0" stroke-width="1"/>
+
+  <!-- Line number gutter -->
+  <rect x="24" y="40" width="30" height="596" rx="5" fill="#f2f2f2"/>
+  <rect x="49" y="40" width="5" height="596" fill="#fafafa"/>
+
+  <!-- ===== Y grid: start=60, step=17 ===== -->
+  <!-- Each code line is spaced 17px apart -->
+
+  <!-- == HEADER (lines 1-4) == -->
+  <text x="48" y="60" class="ln m">1</text>  <text x="60" y="60" class="m br">{</text>
+  <text x="48" y="77" class="ln m">2</text>  <text x="76" y="77" class="m k">"scenario"</text><text x="136" y="77" class="m br"> : </text><text x="150" y="77" class="m v">"A"</text><text x="162" y="77" class="m br">,</text>
+  <text x="48" y="94" class="ln m">3</text>  <text x="76" y="94" class="m k">"article_id"</text><text x="148" y="94" class="m br"> : </text><text x="162" y="94" class="m v">"시행령 제86조"</text><text x="250" y="94" class="m br">,</text>
+  <text x="48" y="111" class="ln m">4</text> <text x="76" y="111" class="m k">"article_title"</text><text x="164" y="111" class="m br"> : </text><text x="178" y="111" class="m v">"일조 등의 확보를 위한 건축물의 높이 제한"</text><text x="435" y="111" class="m br">,</text>
+
+  <!-- =============================== -->
+  <!-- R Section (lines 5-8)           -->
+  <!-- =============================== -->
+  <!-- Section background -->
+  <rect x="55" y="120" width="424" height="58" rx="0" fill="#f5f5f5" stroke="none"/>
+
+  <text x="48" y="135" class="ln m">5</text> <text x="76" y="135" class="m k">"R"</text><text x="88" y="135" class="m br"> : {</text>
+  <text x="48" y="152" class="ln m">6</text> <text x="92" y="152" class="m k">"description"</text><text x="170" y="152" class="m br"> : </text><text x="184" y="152" class="m v">"전용주거지역·일반주거지역에서 건축물을 건축하는 경우,</text>
+  <text x="48" y="169" class="ln m">7</text> <text x="92" y="169" class="m v">정북방향 인접 대지경계선으로부터 일정 거리 이상을 띄어 건축"</text>
+  <text x="48" y="186" class="ln m">8</text> <text x="76" y="186" class="m br">},</text>
+
+  <!-- R label -->
+  <rect x="500" y="126" width="176" height="42" rx="4" fill="white" stroke="#ccc" stroke-width="0.8"/>
+  <line x1="484" y1="147" x2="500" y2="147" stroke="#ccc" stroke-width="0.8"/>
+  <text x="512" y="144" class="sec-title">R  Requirement</text>
+  <text x="512" y="160" class="sec-desc">규정의 핵심 의무</text>
+
+  <!-- =============================== -->
+  <!-- A Section (lines 9-13)          -->
+  <!-- =============================== -->
+  <text x="48" y="208" class="ln m">9</text>  <text x="76" y="208" class="m k">"A"</text><text x="88" y="208" class="m br"> : {</text>
+  <text x="48" y="225" class="ln m">10</text> <text x="92" y="225" class="m k">"applicable_zones"</text><text x="206" y="225" class="m br"> : </text><text x="220" y="225" class="m v">["전용주거지역", "일반주거지역"]</text><text x="413" y="225" class="m br">,</text>
+  <text x="48" y="242" class="ln m">11</text> <text x="92" y="242" class="m k">"applicable_building_types"</text><text x="262" y="242" class="m br"> : </text><text x="276" y="242" class="m v">["모든 건축물"]</text><text x="362" y="242" class="m br">,</text>
+  <text x="48" y="259" class="ln m">12</text> <text x="92" y="259" class="m k">"special_targets"</text><text x="202" y="259" class="m br"> : </text><text x="216" y="259" class="m v">["공동주택(기숙사 제외) 채광창 기준"]</text>
+  <text x="48" y="276" class="ln m">13</text> <text x="76" y="276" class="m br">},</text>
+
+  <!-- A label -->
+  <rect x="500" y="218" width="176" height="42" rx="4" fill="white" stroke="#ccc" stroke-width="0.8"/>
+  <line x1="484" y1="239" x2="500" y2="239" stroke="#ccc" stroke-width="0.8"/>
+  <text x="512" y="236" class="sec-title">A  Applicability</text>
+  <text x="512" y="252" class="sec-desc">적용 대상 (용도지역, 건물유형)</text>
+
+  <!-- =============================== -->
+  <!-- S Section (lines 14-25)         -->
+  <!-- =============================== -->
+  <!-- Section background -->
+  <rect x="55" y="285" width="424" height="170" rx="0" fill="#f5f5f5" stroke="none"/>
+
+  <text x="48" y="298" class="ln m">14</text> <text x="76" y="298" class="m k">"S"</text><text x="88" y="298" class="m br"> : {</text>
+  <text x="48" y="315" class="ln m">15</text> <text x="92" y="315" class="m k">"parameters"</text><text x="166" y="315" class="m br"> : {</text>
+  <text x="48" y="332" class="ln m">16</text> <text x="108" y="332" class="m k">"low_threshold"</text><text x="204" y="332" class="m br"> : </text><text x="218" y="332" class="m n">10.0</text><text x="244" y="332" class="m br">,</text>
+                                               <text x="264" y="332" class="m k">"low_setback"</text><text x="348" y="332" class="m br"> : </text><text x="362" y="332" class="m n">1.5</text><text x="382" y="332" class="m br">,</text>
+  <text x="48" y="349" class="ln m">17</text> <text x="108" y="349" class="m k">"mid_threshold"</text><text x="206" y="349" class="m br"> : </text><text x="220" y="349" class="m nl">null</text><text x="244" y="349" class="m br">,</text>
+                                               <text x="264" y="349" class="m k">"mid_setback"</text><text x="352" y="349" class="m br"> : </text><text x="366" y="349" class="m nl">null</text><text x="390" y="349" class="m br">,</text>
+  <text x="48" y="366" class="ln m">18</text> <text x="108" y="366" class="m k">"slope_ratio"</text><text x="196" y="366" class="m br"> : </text><text x="210" y="366" class="m n">0.5</text>
+  <text x="48" y="383" class="ln m">19</text> <text x="92" y="383" class="m br">},</text>
+  <text x="48" y="400" class="ln m">20</text> <text x="92" y="400" class="m k">"conditions"</text><text x="166" y="400" class="m br"> : [</text>
+  <text x="48" y="417" class="ln m">21</text> <text x="108" y="417" class="m br">{</text><text x="118" y="417" class="m v">"높이 10m 이하"</text><text x="216" y="417" class="m br"> → </text><text x="234" y="417" class="m v">1.5m 이격</text><text x="302" y="417" class="m br">,  </text><text x="316" y="417" class="m k">rule_type</text><text x="376" y="417" class="m br"> : </text><text x="390" y="417" class="m v">"fixed"</text><text x="430" y="417" class="m br">},</text>
+  <text x="48" y="434" class="ln m">22</text> <text x="108" y="434" class="m br">{</text><text x="118" y="434" class="m v">"높이 10m 초과"</text><text x="216" y="434" class="m br"> → </text><text x="234" y="434" class="m v">h * 0.5 이격</text><text x="316" y="434" class="m br">,  </text><text x="330" y="434" class="m k">rule_type</text><text x="390" y="434" class="m br"> : </text><text x="404" y="434" class="m v">"proportional"</text><text x="470" y="434" class="m br">}</text>
+  <text x="48" y="451" class="ln m">23</text> <text x="92" y="451" class="m br">]</text>
+  <text x="48" y="468" class="ln m">24</text> <text x="76" y="468" class="m br">},</text>
+
+  <!-- S label -->
+  <rect x="500" y="340" width="176" height="42" rx="4" fill="white" stroke="#ccc" stroke-width="0.8"/>
+  <line x1="484" y1="361" x2="500" y2="361" stroke="#ccc" stroke-width="0.8"/>
+  <text x="512" y="358" class="sec-title">S  Selection</text>
+  <text x="512" y="374" class="sec-desc">수치 파라미터 + 조건 분기</text>
+
+  <!-- =============================== -->
+  <!-- E Section (lines 25-28)         -->
+  <!-- =============================== -->
+  <text x="48" y="488" class="ln m">25</text> <text x="76" y="488" class="m k">"E"</text><text x="88" y="488" class="m br"> : {</text>
+  <text x="48" y="505" class="ln m">26</text> <text x="92" y="505" class="m k">"exceptions"</text><text x="166" y="505" class="m br"> : [</text>
+  <text x="48" y="522" class="ln m">27</text> <text x="108" y="522" class="m br">{</text><text x="118" y="522" class="m v">"정북방향 20m 이상 도로 접면"  →  "미적용"</text><text x="382" y="522" class="m br">},</text>
+  <text x="48" y="539" class="ln m">28</text> <text x="108" y="539" class="m br">{</text><text x="118" y="539" class="m v">"인접 대지 비주거지역"  →  "미적용"</text><text x="334" y="539" class="m br">}</text>
+  <text x="48" y="556" class="ln m">29</text> <text x="92" y="556" class="m br">]</text>
+  <text x="48" y="573" class="ln m">30</text> <text x="76" y="573" class="m br">},</text>
+
+  <!-- E label -->
+  <rect x="500" y="502" width="176" height="42" rx="4" fill="white" stroke="#ccc" stroke-width="0.8"/>
+  <line x1="484" y1="523" x2="500" y2="523" stroke="#ccc" stroke-width="0.8"/>
+  <text x="512" y="520" class="sec-title">E  Exception</text>
+  <text x="512" y="536" class="sec-desc">사선제한 미적용 조건</text>
+
+  <!-- =============================== -->
+  <!-- LLM boundary line               -->
+  <!-- =============================== -->
+  <line x1="55" y1="582" x2="479" y2="582" stroke="#ccc" stroke-width="0.8" stroke-dasharray="4,3"/>
+  <text x="267" y="595" text-anchor="middle" class="sec-desc" fill="#bbb">- - -  LLM 자동 추출 범위  - - -</text>
+
+  <!-- =============================== -->
+  <!-- SUPPLEMENTARY RULES (설계자 추가) -->
+  <!-- =============================== -->
+  <!-- Highlight -->
+  <rect x="55" y="604" width="424" height="28" rx="0" fill="#e8e8e8" stroke="none"/>
+  <rect x="55" y="604" width="3" height="28" fill="#666"/>
+
+  <text x="48" y="622" class="ln m">31</text> <text x="76" y="622" class="m k">"supplementary_rules"</text><text x="212" y="622" class="m br"> : {</text>
+  <text x="220" y="622" class="m k">"source"</text><text x="268" y="622" class="m br"> : </text><text x="280" y="622" class="m v">"서울시 조례 제30조 별표4"</text><text x="440" y="622" class="m br">,</text>
+
+  <!-- Second line of supplementary -->
+  <rect x="55" y="632" width="424" height="4" rx="0" fill="#fafafa" stroke="none"/>
+
+  <!-- Annotation for supplementary -->
+  <rect x="500" y="592" width="176" height="54" rx="4" fill="#555" stroke="#333" stroke-width="0.8"/>
+  <text x="588" y="612" text-anchor="middle" class="badge">설계자 직접 추가</text>
+  <text x="588" y="626" text-anchor="middle" font-size="7" fill="#ccc" font-family="'KoPubDotum',sans-serif">LLM이 법→시행령→조례 위임 구조를</text>
+  <text x="588" y="638" text-anchor="middle" font-size="7" fill="#ccc" font-family="'KoPubDotum',sans-serif">추적하지 못해 설계자가 수동 입력</text>
+  <line x1="484" y1="620" x2="500" y2="620" stroke="#666" stroke-width="1.2"/>
+
+</svg>

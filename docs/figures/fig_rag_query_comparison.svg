@@ -1,0 +1,142 @@
+<svg viewBox="0 0 760 580" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      text { font-family: 'KoPubDotum', 'KoPub돋움체', sans-serif; }
+      .h1 { font-size: 14px; font-weight: 700; fill: #111; }
+      .h2 { font-size: 11px; font-weight: 600; fill: #333; }
+      .body { font-size: 9.5px; fill: #333; }
+      .body-sm { font-size: 8.5px; fill: #555; }
+      .dim { font-size: 8px; fill: #999; }
+      .mono { font-family: 'SF Mono','Menlo','Consolas',monospace; font-size: 8.5px; fill: #888; }
+      .tag { font-size: 10px; font-weight: 700; }
+      .tag-sm { font-size: 8.5px; font-weight: 600; }
+    </style>
+    <marker id="arr" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <path d="M0,0 L7,2.5 L0,5" fill="#999"/>
+    </marker>
+    <marker id="arr-dk" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <path d="M0,0 L7,2.5 L0,5" fill="#444"/>
+    </marker>
+  </defs>
+
+  <rect width="760" height="580" fill="white"/>
+
+  <!-- ================ COLUMN GRID ================ 
+       Left col:   x=28  w=320  center=188
+       Divider:    x=380
+       Right col:  x=412 w=320  center=572
+  ================================================= -->
+
+  <!-- ===== (a) HEADER ===== -->
+  <text x="188" y="28" text-anchor="middle" class="h1">Q0 통합 질의</text>
+  <line x1="118" y1="34" x2="258" y2="34" stroke="#ccc" stroke-width="0.8"/>
+
+  <!-- ===== (b) HEADER ===== -->
+  <text x="572" y="28" text-anchor="middle" class="h1">Q1-Q3 분할 질의</text>
+  <line x1="492" y1="34" x2="652" y2="34" stroke="#ccc" stroke-width="0.8"/>
+
+  <!-- ============================================= -->
+  <!-- (a) LEFT COLUMN                               -->
+  <!-- ============================================= -->
+
+  <!-- Q0 Query Box -->
+  <rect x="48" y="50" width="280" height="50" rx="4" fill="#f7f7f7" stroke="#c0c0c0" stroke-width="1"/>
+  <text x="66" y="69" class="tag" fill="#333">Q0</text>
+  <text x="188" y="87" text-anchor="middle" class="body-sm">"건축가능영역에 영향을 미치는 법적 규제를 모두 검색하라"</text>
+
+  <!-- Arrow -->
+  <line x1="188" y1="100" x2="188" y2="130" stroke="#999" stroke-width="1" marker-end="url(#arr)"/>
+  <text x="200" y="120" class="mono">TF-IDF</text>
+
+  <!-- Results Box -->
+  <rect x="48" y="138" width="280" height="130" rx="4" fill="white" stroke="#c0c0c0" stroke-width="1"/>
+  <text x="188" y="158" text-anchor="middle" class="h2">검색 결과</text>
+
+  <!-- Result rows (table-like) -->
+  <rect x="62" y="168" width="252" height="24" rx="3" fill="#f4f4f4" stroke="none"/>
+  <text x="72" y="184" class="body">시행령 제3조   (대지의 범위)</text>
+  <text x="302" y="184" text-anchor="end" class="mono">0.31</text>
+
+  <rect x="62" y="198" width="252" height="24" rx="3" fill="#f4f4f4" stroke="none"/>
+  <text x="72" y="214" class="body">시행령 제27조  (대지의 조경)</text>
+  <text x="302" y="214" text-anchor="end" class="mono">0.28</text>
+
+  <rect x="62" y="228" width="252" height="24" rx="3" fill="#f4f4f4" stroke="none"/>
+  <text x="72" y="244" class="body">시행령 제6조   (건축 허가 대상)</text>
+  <text x="302" y="244" text-anchor="end" class="mono">0.25</text>
+
+  <!-- FAIL badge -->
+  <rect x="153" y="282" width="70" height="26" rx="13" fill="#e0e0e0" stroke="#bbb" stroke-width="0.8"/>
+  <text x="188" y="300" text-anchor="middle" class="tag" fill="#666">FAIL</text>
+
+  <!-- Missing box -->
+  <rect x="48" y="322" width="280" height="72" rx="4" fill="none" stroke="#bbb" stroke-width="1" stroke-dasharray="5,4"/>
+  <text x="188" y="342" text-anchor="middle" class="h2" fill="#888">핵심 규제 미검출</text>
+  <text x="72" y="362" class="body" fill="#999">  -  시행령 제86조 (일조권 사선제한)</text>
+  <text x="72" y="380" class="body" fill="#999">  -  조례 제30조 (대지 안의 공지)</text>
+
+  <!-- Cause -->
+  <rect x="48" y="408" width="280" height="42" rx="4" fill="#fafafa" stroke="#ddd" stroke-width="0.8"/>
+  <text x="188" y="426" text-anchor="middle" class="body-sm" fill="#777">원인 :  "건축가능영역"이 특정 조문의 키워드와</text>
+  <text x="188" y="440" text-anchor="middle" class="body-sm" fill="#777">직접 매칭되지 않아 TF-IDF 점수가 분산됨</text>
+
+
+  <!-- ============================================= -->
+  <!-- (b) RIGHT COLUMN                              -->
+  <!-- ============================================= -->
+
+  <!-- Q1/Q2/Q3 Query Boxes -->
+  <rect x="432" y="50" width="260" height="28" rx="4" fill="#f7f7f7" stroke="#c0c0c0" stroke-width="1"/>
+  <text x="448" y="69" class="tag" fill="#333">Q1</text>
+  <text x="478" y="69" class="body">"정북방향 일조권 사선제한 기준은?"</text>
+
+  <rect x="432" y="84" width="260" height="28" rx="4" fill="#f7f7f7" stroke="#c0c0c0" stroke-width="1"/>
+  <text x="448" y="103" class="tag" fill="#333">Q2</text>
+  <text x="478" y="103" class="body">"건축물 이격거리 기준은?"</text>
+
+  <rect x="432" y="118" width="260" height="28" rx="4" fill="#f7f7f7" stroke="#c0c0c0" stroke-width="1"/>
+  <text x="448" y="137" class="tag" fill="#333">Q3</text>
+  <text x="478" y="137" class="body">"건축물 높이제한 기준은?"</text>
+
+  <!-- Arrow -->
+  <line x1="572" y1="146" x2="572" y2="176" stroke="#999" stroke-width="1" marker-end="url(#arr)"/>
+  <text x="584" y="166" class="mono">TF-IDF</text>
+
+  <!-- Results Box -->
+  <rect x="432" y="184" width="260" height="310" rx="4" fill="white" stroke="#c0c0c0" stroke-width="1"/>
+  <text x="572" y="206" text-anchor="middle" class="h2">검색 결과 (8개 핵심 조문)</text>
+
+  <!-- Q1 Group -->
+  <text x="446" y="224" class="dim">Q1 응답</text>
+  <rect x="446" y="230" width="232" height="22" rx="3" fill="#f4f4f4"/>
+  <text x="456" y="245" class="body-sm">시행령 제86조  일조 등의 확보를 위한 높이 제한</text>
+  <rect x="446" y="256" width="232" height="22" rx="3" fill="#f4f4f4"/>
+  <text x="456" y="271" class="body-sm">법 제61조  일조 등의 확보를 위한 건축물의 높이 제한</text>
+
+  <!-- Q2 Group -->
+  <text x="446" y="294" class="dim">Q2 응답</text>
+  <rect x="446" y="300" width="232" height="22" rx="3" fill="#f4f4f4"/>
+  <text x="456" y="315" class="body-sm">시행령 제80조의2  건축선 및 인접 대지경계선 이격</text>
+  <rect x="446" y="326" width="232" height="22" rx="3" fill="#f4f4f4"/>
+  <text x="456" y="341" class="body-sm">법 제58조  대지 안의 공지</text>
+  <rect x="446" y="352" width="232" height="22" rx="3" fill="#f4f4f4"/>
+  <text x="456" y="367" class="body-sm">조례 제30조  건축선 등으로부터 건축물까지의 거리</text>
+
+  <!-- Q3 Group -->
+  <text x="446" y="390" class="dim">Q3 응답</text>
+  <rect x="446" y="396" width="232" height="22" rx="3" fill="#f4f4f4"/>
+  <text x="456" y="411" class="body-sm">시행령 제82조  건축물의 높이 제한</text>
+  <rect x="446" y="422" width="232" height="22" rx="3" fill="#f4f4f4"/>
+  <text x="456" y="437" class="body-sm">법 제60조  건축물의 높이 제한</text>
+  <rect x="446" y="448" width="232" height="22" rx="3" fill="#f4f4f4"/>
+  <text x="456" y="463" class="body-sm">시행령 제86조  일조 등의 확보를 위한 높이 제한</text>
+
+  <!-- SUCCESS badge -->
+  <rect x="537" y="502" width="70" height="26" rx="13" fill="#555" stroke="#333" stroke-width="0.8"/>
+  <text x="572" y="520" text-anchor="middle" class="tag" fill="white">SUCCESS</text>
+
+  <!-- Conclusion -->
+  <rect x="432" y="542" width="260" height="30" rx="4" fill="#f7f7f7" stroke="#bbb" stroke-width="0.8"/>
+  <text x="562" y="561" text-anchor="middle" class="body-sm" fill="#444">도메인 지식 기반 질의 분할 → TF-IDF 매칭 성능 회복</text>
+
+</svg>
