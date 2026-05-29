@@ -2,7 +2,7 @@
 
 > Implementation of an automated framework — combining LLM-based regulation extraction, RASE-format structuring, and geometry-based north-facing setback simulation across Seoul residential parcels.
 
-> 🌐 **Interactive 3D Map (companion project)** — Seoul-wide buildable volume results (all 25 districts) rendered as 3D extruded slabs in the browser: **[https://969flash.github.io/BuildableRegionGenrator/](https://969flash.github.io/BuildableRegionGenrator/)**
+> 🌐 **Interactive 3D Map (companion project)** — Seoul-wide buildable volume results (all 25 districts) rendered as 3D extruded slabs in the browser: **[3D MAP LINK ->](https://969flash.github.io/BuildableRegionGenrator/)**
 
 ![GIS heatmap of Gangnam-gu simulation results](docs/figures/fig5_gis_heatmap.png)
 
