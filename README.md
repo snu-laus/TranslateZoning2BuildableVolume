@@ -105,12 +105,12 @@ Regulation-specific keyword signals (e.g., 제86조, 일조, 정북, 인접대�
 
 | Mode | Recall@5 | Precision@5 | Readiness Acc. | MRR |
 | --- | --- | --- | --- | --- |
-| TF-IDF | **0.872** | **0.636** | **0.880** | **0.743** |
-| BM25 | 0.752 | 0.524 | 0.760 | 0.674 |
-| Dense | 0.702 | 0.444 | 0.700 | 0.617 |
-| Hybrid TF-IDF+BM25 | 0.788 | 0.528 | 0.780 | 0.693 |
-| Hybrid BM25+Dense | 0.798 | 0.532 | 0.780 | 0.695 |
-| Hybrid TF-IDF+Dense | 0.768 | 0.480 | 0.760 | 0.643 |
+| TF-IDF | **0.880** | **0.584** | **0.900** | **0.674** |
+| BM25 | 0.705 | 0.416 | 0.680 | 0.621 |
+| Dense | 0.537 | 0.328 | 0.620 | 0.446 |
+| Hybrid TF-IDF+BM25 | 0.772 | 0.456 | 0.760 | 0.674 |
+| Hybrid BM25+Dense | 0.802 | 0.468 | 0.800 | 0.654 |
+| Hybrid TF-IDF+Dense | 0.765 | 0.424 | 0.780 | 0.599 |
 
 Model selection applies a **gate + priority rule**: only models with Readiness Accuracy ≥ 0.85 qualify; among those, ranked by Recall@5 > Precision@5 > MRR. **TF-IDF single retrieval** is the selected model.
 
@@ -217,7 +217,7 @@ data/result/  →  CSV     data/qa/  →  QA logs
 
 ### Requirements
 
-Requires **Rhino 7+** with Grasshopper and RhinoCommon (bundled). Python libraries (`shapely`, `geopandas`, `pyshp`) must be installed in Rhino's Python environment.
+Requires **Rhino 8** (CPython 3 GhPython) with Grasshopper and RhinoCommon (bundled). The only third-party Python library needed in Rhino's environment is **`pyshp`**; `shapely`/`geopandas` are used only by the standalone data-prep scripts in `scripts/`.
 
 ### Running the Simulation
 
@@ -260,7 +260,7 @@ The setback engine consults the lot attribute `APT_YN` to detect when a neighbor
 python3 scripts/verify_geom_shp.py data/_seoul_apt/result_geom/
 ```
 
-Checks field schema (`pnu`, `floor_from`, `floor_to`, `type`, `h_base_m`, `h_top_m`, `zone_cd`, `area_m2`, `seg_cnt`), CRS (EPSG:5179), Seoul BBOX, polygon closure, and feature counts.
+Checks field schema (`pnu`, `floor_from`, `floor_to`, `type`, `h_base_m`, `h_top_m`, `zone_cd`, `area_m2`, `seg_cnt`), CRS (EPSG:5186), Seoul BBOX, polygon closure, and feature counts.
 
 ---
 
@@ -308,7 +308,7 @@ Fig. 4 — Automated output vs hand-calculated reference (Current scenario, 3 re
 
 ### result_geom/ — Per-floor buildable polygons
 
-Produced by `setback_sim/seoul_geom_export.py`. EPSG:5179 Polygon shapefile per (district, setback_type).
+Produced by `setback_sim/seoul_geom_export.py`. EPSG:5186 Polygon shapefile per (district, setback_type).
 
 | Column | Type | Description |
 | --- | --- | --- |
