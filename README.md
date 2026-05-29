@@ -1,5 +1,7 @@
 # LLM-Based Design Automation for Defining Buildable Envelopes: Simulating Daylight Setback Regulation Changes
 
+# LLM 기반 건축가능영역 설계 자동화: 일조권 사선제한 개정안 효과 시뮬레이션에 적용하여
+
 > Implementation of an automated framework — combining LLM-based regulation extraction, RASE-format structuring, and geometry-based north-facing setback simulation across Seoul residential parcels.
 
 > 🌐 **Interactive 3D Map (companion project)** — Seoul-wide buildable volume results (all 25 districts) rendered as 3D extruded slabs in the browser: **[3D MAP LINK ->](https://969flash.github.io/BuildableRegionGenrator/)**
